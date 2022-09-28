@@ -8,12 +8,18 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "allowJs": true,
-    "outDir": "./dist",                                                               
+    "outDir": "./dist",
+    "rootDir": "src",                                                               
     "esModuleInterop": true,                                         
     "forceConsistentCasingInFileNames": true,
     "strict": true,                                      
     "noImplicitAny": true,
     "strictPropertyInitialization": false,
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": ["*"]
+    },
+    "baseUrl": "src"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"],
